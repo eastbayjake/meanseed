@@ -1,6 +1,13 @@
-# MEAN Seed with Bootstrap, FontAwesome, Jade, Angular SEO, and Google Analytics
+# MEAN Seed
 
-It does exactly what it says. Modified from Brian Ford's excellent [Angular-Express Seed](https://github.com/btford/angular-express-seed).
+MongoDB, Express, AngularJS, Node.js (MEAN) seed, plus some fun extras:
+* Bootstrap + Angular-UI
+* FontAwesome
+* Jade Templating
+* Angular SEO
+* Google Analytics
+
+Modified from Brian Ford's excellent [Angular-Express Seed](https://github.com/btford/angular-express-seed).
 
 ## Setup
 

@@ -1,39 +1,39 @@
 extends layout
 
 block body
-  div.navbar-wrapper
-    div.container
-      div.navbar(role="navigation")
-        div.container
-          button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href="#") Brand Logo
-          div.navbar-collapse.collapse
-            ul.nav.navbar-nav
-              li.active
-                a(href="/") Home
-              li
-                a(href="/view1") View 1
-              li
-                a(href='/view2') View 2
-              li.dropdown
-                a.dropdown-toggle(href="#", data-toggle="dropdown") Social Media
-                  b.caret
-                ul.dropdown-menu
-                  li
-                    a(href="http://www.facebook.com")
-                      i.fa.fa-facebook-square &nbsp;
-                      span Facebook
-                  li
-                    a(href="http://www.twitter.com")
-                      i.fa.fa-twitter-square &nbsp;
-                      span Twitter
-                  li
-                    a(href="https://github.com")
-                      i.fa.fa-github-square &nbsp;
-                      span GitHub
+  div.navbar.navbar-default(role="navigation")
+    div.navbar-header
+      button.navbar-toggle(type="button", ng-init="navCollapsed = true", ng-click="navCollapsed = !navCollapsed")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      div.navbar-brand.rocksalt Frances Anne Lee
+    div.collapse.navbar-collapse(collapse="navCollapsed")
+      ul.nav.navbar-nav
+        li
+          a(href="/") Home
+        li
+          a(href="/view1") View 1
+        li
+          a(href="/view2") View 2
+        li.dropdown
+          a.dropdown-toggle(href="#", data-toggle="dropdown") Social Media
+            b.caret
+          ul.dropdown-menu
+            li
+              a(href="http://www.facebook.com")
+                i.fa.fa-facebook-square &nbsp;
+                span Facebook
+            li
+              a(href="http://www.twitter.com")
+                i.fa.fa-twitter-square &nbsp;
+                span Twitter
+            li
+              a(href="https://github.com")
+                i.fa.fa-github-square &nbsp;
+                span GitHub
+        li
+          a(href='/contact') Contact
   div(ng-view)
 
   script(src='js/lib/angular/angular.js')
